@@ -5,20 +5,19 @@ The app allows users to create a profile with which to create, customize, and or
 ### Included files:
 * LICENSE
 * README
-* ConferenceCentral_Complete
-	* static
-	* templates
-	* app.yaml -  configuration file for the App Engine app. Contains
-		handler urls and python libraries
-	* cron.yaml - configuration file for App Engine cron jobs
-	* index.yaml - contains indexes to improve ndb query times
-	* conference.py - application server containing endpoints for
-		creating, editing, and deleting conferences, sessions and profiles
-	* main.py - contains handlers for task queues called in conference.py
-	* models.py - contains the ndb and protorpc models
-	* settings.py - contains App Engine WEB_CLIENT_ID
-	* utils.py - contains getUserId function
-	* LICENSE
+* static
+* templates
+* app.yaml -  configuration file for the App Engine app. Contains
+	handler urls and python libraries
+* cron.yaml - configuration file for App Engine cron jobs
+* index.yaml - contains indexes to improve ndb query times
+* conference.py - application server containing endpoints for
+	creating, editing, and deleting conferences, sessions and profiles
+* main.py - contains handlers for task queues called in conference.py
+* models.py - contains the ndb and protorpc models
+* settings.py - contains App Engine WEB_CLIENT_ID
+* utils.py - contains getUserId function
+* LICENSE
 
 ### Using the Application:
 To use the application go to [delta-entity-114022.appspot.com](https://delta-entity-114022.appspot.com).
