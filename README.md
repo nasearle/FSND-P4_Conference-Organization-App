@@ -1,5 +1,6 @@
 ## Conference Central
-This is a web application that enables users to create and customize conferences.
+This is a web application created with Google ProtoRPC, Google App Enginge, and Google Datastore.
+The app allows users to create a profile with which to create, customize, and organize conferences.
 
 ### Included files:
 * LICENSE
@@ -20,18 +21,18 @@ This is a web application that enables users to create and customize conferences
 	* LICENSE
 
 ### Using the Application:
-To use the application go to [delta-entity-114022.appspot.com](delta-entity-114022.appspot.com).
+To use the application go to [delta-entity-114022.appspot.com](https://delta-entity-114022.appspot.com).
 From the homepage you can log in, edit your profile, create conferences, and view and edit conferences.
 
 #### Task 1: Design Choices Response
 New Session and SessionForm classes were created in models.py. The Session class is an ndb model 
 that maps its properties to corresponding properties of Session entities in Datastore. All properties
 in the Session class are string data types except date and startTime, which are date and time types. 
-This was the simplest solution for storing the data. If necessary, data can then be converted to the 
-correct type for operations in filters after retrieving it from Datastore. SessionForms is a protorpc
-Messages class that defines the response-parameters for an external call to the application. All 
-fields of SessionForm are string types, which are converted to the correct data types upon the 
-creation of a new Session entity (date and startTime are converted to date and time data types).
+If necessary, data can then be converted to the correct type for operations in filters after 
+retrieving it from Datastore. SessionForms is a protorpc Messages class that defines the 
+response-parameters for an external call to the application. All fields of SessionForm are string 
+types, which are converted to the correct data types upon the creation of a new Session entity 
+(date and startTime are converted to date and time data types).
 
 The createSession endpoint takes the websafeConferenceKey as a parameter. It passes the 
 websafeConferenceKey to the createSessionObject function. The function copies the data in the 
