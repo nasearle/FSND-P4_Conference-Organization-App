@@ -1,5 +1,5 @@
 ## Conference Central
-This is a web application created with Google ProtoRPC, Google App Enginge, and Google Datastore.
+This is a web application created with Google ProtoRPC, Google App Engine, and Google Datastore.
 Users sign in to create, customize, and organize conferences.
 
 ### Included files:
