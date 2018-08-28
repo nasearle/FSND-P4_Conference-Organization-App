@@ -45,7 +45,7 @@ each take the websafeConferenceKey as a parameter, which is used to get the conf
 Datastore.  We then query for all sessions with this conference as the ancestor, and apply filters
 in the cases of getConferenceSessionsByType and getConferenceSessionsBySpeaker.
 
-#### Task 3: Additional Queries
+#### Task 2: Additional Queries
 I added two additional query types: getConferenceSessionsByDuration and getConferenceSessionsByTime.
 getConferenceSessionsByDuration takes as input a time (in minutes e.g. '120' for 2 hours) and returns
 all sessions of that duration. getConferenceSessionsByTime takes as input a time of day (24-hour time
